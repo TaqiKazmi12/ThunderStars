@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: url('HeaderImage.png') no-repeat center center/cover;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 90%;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table.leaderboard {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #000041;
+    color: #fff;
+}
+
+table.leaderboard th, table.leaderboard td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table.leaderboard th {
+    background-color: #000041;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.changedbg {
+    background: linear-gradient(#000041, #101075);
+}
+table.leaderboard td {
+    background-color: #1e2a38;
+}
+
+table.leaderboard td i {
+    margin-right: 0.5rem;
+}
+.red{
+    background: white !important;
+}
+table.leaderboard tr.top-1 {
+    background-color: #ffd700; /* Gold */
+}
+
+table.leaderboard tr.top-2 {
+    background-color: #c0c0c0; /* Silver */
+}
+
+table.leaderboard tr.top-3 {
+    background-color: #cd7f32 !important; /* Bronze */
+}
+
+table.leaderboard tr:not(.top-1):not(.top-2):not(.top-3) {
+    background-color: #fff;
+    color: #000;
+}
+
+table.leaderboard tr:not(.top-1):not(.top-2):not(.top-3):hover {
+    background-color: #e2e2e2;
+}
+
+.fas.fa-trophy {
+    font-size: 1.2rem;
+}
+
+.fas.fa-trophy.gold {
+    color: gold;
+}
+
+.fas.fa-trophy.silver {
+    color: silver;
+}
+
+.fas.fa-trophy.bronze {
+    color: #cd7f32;
+}

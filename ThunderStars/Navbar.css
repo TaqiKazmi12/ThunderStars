@@ -1,0 +1,307 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #000041; /* Dark blue theme */
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease; /* Smooth transition for logo */
+}
+
+.logo img {
+    height: 71px;
+    width: 147px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for logo image */
+}
+
+.logo:hover img {
+    transform: scale(1.1); /* Slightly scale up the logo on hover */
+    filter: brightness(1.2); /* Increase brightness on hover */
+}
+
+/* Navigation links styling */
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px; /* Space between menu items */
+}
+
+.nav-links li {
+    position: relative;
+}
+
+/* Links styling */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.nav-links a:hover, .dropdown:hover .dropbtn {
+    background-color: #333366; /* Darker blue for hover effect */
+    border-radius: 5px; /* Rounded corners on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Dropdown Content styling */
+.dropdown-content {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    background-color: #000041; /* Dark blue theme */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px; /* Rounded corners */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth opacity and transform transition */
+    transform: scaleY(0); /* Initial scale for slide-in effect */
+    transform-origin: top; /* Scale from top */
+}
+
+/* Dropdown Content Animation */
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: scaleY(1); /* Scale to full size */
+}
+
+/* Dropdown Links styling */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Dropdown Links Hover Effect */
+.dropdown-content a:hover {
+    background-color: #333366; /* Darker blue for hover effect */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Dropdown Button Style */
+.dropdown .dropbtn {
+    background-color: #000041; /* Dark blue for button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Smooth transition for button */
+}
+
+.dropdown .dropbtn::after {
+    content: '\f0d7'; /* Font Awesome downward arrow */
+    font-family: 'FontAwesome';
+    padding-left: 8px;
+}
+
+/* Responsive Styles for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: block; /* Stack the links vertically */
+        background-color: #000041; /* Dark blue theme */
+        width: 100%; /* Full width */
+    }
+
+    .nav-links li {
+        text-align: center; /* Center align items */
+        border-bottom: 1px solid #333366; /* Add separator */
+    }
+
+    .nav-links a {
+        padding: 15px; /* Adjust padding for better mobile experience */
+        display: block;
+    }
+
+    .dropdown-content {
+        position: static; /* Position it relative to the parent on mobile */
+    }
+    .dropbtn{
+        margin-left: 92px;
+    }
+}
+
+
+
+
+
+/* Footer Section Starting */
+.footer {
+    background-color: #040443;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px; /* Maximum width for better layout */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 220px; /* Minimum width for responsiveness */
+}
+
+.footer-section h3 {
+    font-size: 1.8em;
+    color: white;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffffff; /* Bottom border for emphasis */
+    padding-bottom: 5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Shadow for text visibility */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: #ffffff; /* Use white color for links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer-section ul li a:hover {
+    color: #aab4e7; /* Light blue color on hover for better visibility */
+    text-decoration: underline;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section form input {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer-section form button {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff; /* White background for button */
+    color: #020251; /* Dark theme color for text */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.footer-section form button:hover {
+    background-color: #d3d3d3; /* Light grey background on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+.footer-section .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section .social-media a {
+    color: #ffffff; /* White color for icons */
+    font-size: 2em;
+    margin: 0 10px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer-section .social-media a:hover {
+    color: #aab4e7; /* Light blue color on hover */
+}
+
+.footer-section .logo-about {
+    text-align: left;
+}
+
+.footer-section .logo-about .footer-logo {
+    height: 100px; /* Fixed height */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 150px; /* Maximum width */
+    margin-bottom: 20px;
+}
+
+.footer-section .logo-about .footer-about {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #e0e0e0; /* Slightly lighter color for paragraph */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #ffffff; /* Top border for separation */
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: 1em;
+    color: #f4f4f4; /* Light color for text */
+}
+.footer-logo{
+    height: 80px !important;
+
+}
+.footer-about{
+    margin-top: -30;
+
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 20px 0;
+    }
+
+    .footer-section form {
+        width: 100%;
+    }
+}
+
+/* Footer Section Ending */

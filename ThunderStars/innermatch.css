@@ -1,0 +1,240 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Match Result Styles */
+.match-result {
+    background-image: url('HeaderImage.png'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out; /* Animation */
+}
+
+.match-result h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Main Content Styles */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Score Section Styles */
+.score-section {
+    margin-bottom: 40px;
+}
+
+.score-section h3 {
+    background-color: #000041; /* Dark blue background */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    border-radius: 5px;
+    animation: slideIn 0.5s ease-out; /* Animation */
+}
+
+/* Score Table Styles */
+.score-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden; /* Rounded corners */
+    animation: fadeIn 1s ease-out; /* Animation */
+}
+
+.score-table th, .score-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.score-table th {
+    background-color: #000041; /* Dark blue for headers */
+    color: white;
+}
+
+.score-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternating row colors */
+}
+
+.score-table tr:hover {
+    background-color: #ddd; /* Highlight row on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Total Score Styles */
+.total-score {
+    background-image: url('HeaderImage.png'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff; /* Text color for better contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    animation: fadeIn 1s ease-out; /* Animation */
+}
+
+.total-score p {
+    margin: 5px 0;
+    font-size: 1rem; /* Adjust font size for readability */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Light shadow for text readability */
+}
+
+/* Extra Score Styles */
+.extra-score {
+    background-image: url('HeaderImage.png'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff; /* Text color for better contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    animation: fadeIn 1s ease-out; /* Animation */
+}
+
+.extra-score p {
+    margin: 5px 0;
+    font-size: 1rem; /* Adjust font size for readability */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Light shadow for text readability */
+}
+
+/* Man of the Match Styles */
+.man-of-the-match {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.man-of-the-match h3 {
+    background-color: #FFD700; /* Gold background */
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+    font-size: 1.2rem;
+    animation: bounceIn 1s ease-out; /* Animation */
+}
+
+.man-of-the-match a {
+    color: #000041; /* Dark blue color for the link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.man-of-the-match a:hover {
+    text-decoration: underline;
+    animation: pulse 0.5s ease-out; /* Animation */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .score-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .score-table th, .score-table td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .total-score, .extra-score {
+        padding: 15px;
+    }
+
+    .total-score p, .extra-score p {
+        font-size: 0.9rem;
+    }
+
+    .man-of-the-match h3 {
+        font-size: 1rem;
+    }
+}
+/* Style for Wicket-Keeper */
+.wk {
+    background-color: #000041; /* Yellow background */
+    color: #ffffff; /* Black text */
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-left: 0px;
+}
+
+/* Style for Captain */
+.c {
+    background-color: #000041; /* Red background */
+    color: #fff; /* White text */
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-left: 0px;
+}

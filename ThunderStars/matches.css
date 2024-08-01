@@ -1,0 +1,77 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background: url('HeaderImage.png') no-repeat center center; /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire header */
+    color: white;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    height: 250px; /* Adjust height as needed */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add a shadow for better text visibility */
+}
+
+/* Main Content Styles */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Card Styles */
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    padding: 20px;
+    width: 280px; /* Slightly larger width */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 1.5rem; /* Slightly larger font size */
+    color: #000041; /* Dark blue for better visibility */
+}
+
+.card p {
+    margin: 10px 0;
+    color: #666; /* Lighter color for better readability */
+}
+
+.details-button {
+    display: inline-block;
+    padding: 12px 24px; /* Larger padding for a better button appearance */
+    background-color: #000041; /* Dark blue theme */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.details-button:hover {
+    background-color: #333366; /* Darker blue for hover effect */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}

@@ -1,0 +1,139 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+.header {
+    background: url('HeaderImage.png') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* About Us Section */
+.about-us {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.team-introduction, .our-vision, .our-team {
+    margin-bottom: 40px;
+}
+
+.team-introduction h2, .our-vision h2, .our-team h2 {
+    color: #000041; /* Dark blue */
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.team-introduction p, .our-vision p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Team Member Styles */
+.our-team {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.team-member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.member-info {
+    padding: 10px;
+}
+
+.member-info h3 {
+    margin: 0;
+    color: #000041; /* Dark blue */
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.member-info p {
+    margin: 5px 0;
+    color: #333;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .about-us {
+        padding: 20px;
+    }
+
+    .team-introduction h2, .our-vision h2, .our-team h2 {
+        font-size: 2rem;
+    }
+
+    .team-member {
+        padding: 15px;
+    }
+}

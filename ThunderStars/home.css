@@ -1,0 +1,538 @@
+/* Header Starting */
+.home-header {
+    background-image: url('HeaderImage.png'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-blur: rgba(0, 0, 0, 0.5); /* Darker overlay */
+    color: white;
+    padding: 100px 20px; /* Increase padding for larger header */
+    text-align: center;
+}
+
+.home-header h1 {
+    margin: 0;
+    font-size: 4em; /* Larger font size for the heading */
+}
+
+.home-header p {
+    font-size: 2em; /* Larger font size for the paragraph */
+    margin: 15px 0; /* Increase margin for spacing */
+}
+
+.cta-button {
+    background-color: #050568; /* Theme color */
+    color: white;
+    padding: 15px 25px; /* Increase padding for the button */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em; /* Larger font size for the button */
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #333366; /* Darker shade of theme color */
+}
+
+/* Responsive Design for the Header */
+@media screen and (max-width: 768px) {
+    .home-header {
+        padding: 80px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .home-header h1 {
+        font-size: 2.5em; /* Adjust font size for smaller screens */
+    }
+
+    .home-header p {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+
+    .cta-button {
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+}
+/* Header Ending */
+
+
+
+/* About Us Starting */
+.about-us {
+    background-color: #020251; /* Dark theme color */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-us-content {
+    max-width: 900px; /* Increased width for more content */
+    margin: 0 auto;
+    padding: 20px; /* Padding for spacing inside the content */
+    background: rgba(0, 0, 0, 0.3); /* Slight dark overlay for better readability */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.about-us h2 {
+    margin: 0;
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 20px; /* Space below the heading */
+    border-bottom: 3px solid #fffefe; /* Bottom border for emphasis */
+    padding-bottom: 10px; /* Padding below the heading */
+}
+
+.about-us p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #f4f4f4;
+}
+
+/* Additional Styles */
+.about-us img {
+    width: 100%; /* Responsive image width */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for image */
+    margin: 20px 0; /* Space around the image */
+}
+
+.about-us-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0; /* Space above and below the stats */
+}
+
+.about-us-stats div {
+    flex: 1;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 5px;
+    margin: 0 10px; /* Space between stats */
+}
+
+.about-us-stats h3 {
+    margin: 0;
+    font-size: 2em; /* Larger font size for stats heading */
+    color: #ffffff; /* Highlight color */
+}
+
+.about-us-stats p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+/* About Us Ending */
+
+/* FAQ Starting */
+.faq {
+    background-color: #000041; /* Dark theme color */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.faq-content {
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3); /* Slight dark overlay for better readability */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.faq h2 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #fffefe; /* Bottom border for emphasis */
+    padding-bottom: 10px;
+}
+
+.faq-item {
+    margin: 15px 0;
+    border: 1px solid #ffffff; /* Border for each FAQ item */
+    border-radius: 5px;
+    overflow: hidden; /* Ensures that the rounded corners are respected */
+    background: rgba(0, 0, 0, 0.2); /* Slightly transparent background for the FAQ items */
+}
+
+.faq-question {
+    background-color: #020251;
+    color: white;
+    border: none;
+    padding: 15px 20px; /* Adjusted padding for a balanced look */
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.2em;
+    border-radius: 5px; /* Rounded corners for the whole button */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #f4f4f4;
+    color: #020251;
+}
+
+.faq-icon {
+    font-size: 1.5em;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #fffefe; /* White color for the icon */
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg); /* Rotates the icon to indicate open */
+    color: #ff4747; /* Highlight color when open */
+}
+
+.faq-answer {
+    padding: 15px 20px; /* Adjusted padding for consistency */
+    display: block;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 0 0 5px 5px; /* Rounded corners for bottom */
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    overflow: hidden;
+    max-height: 0;
+}
+
+/* Expanded FAQ item */
+.faq-item.active .faq-answer {
+    display: block;
+    max-height: 500px; /* Adjust based on content height */
+    padding: 15px 20px; /* Adjusted padding for consistency */
+}
+/* FAQ Ending */
+
+
+/* Testimonials Section Starting */
+.testimonials {
+    background-color: #020251; /* Dark theme color */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonials-content {
+    max-width: 900px; /* Increased width for better layout */
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Slightly darker overlay for better readability */
+    border-radius: 15px; /* More rounded corners for a modern look */
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #ffffff; /* Emphasize with the theme color */
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Add subtle shadow to text */
+    letter-spacing: 1px; /* Add letter spacing for better readability */
+}
+
+.testimonial-item {
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 10px; /* Rounded corners for card effect */
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow for better separation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly lighter background on hover */
+}
+
+.testimonial-item p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0; /* Remove default margin */
+}
+
+.testimonial-item h4 {
+    font-size: 1.5em;
+    margin: 15px 0 5px;
+    color: #ffffff; /* Use theme color for names */
+}
+
+.testimonial-item p:last-of-type {
+    font-size: 1em;
+    color: #e0e0e0; /* Slightly lighter color for additional text */
+}
+
+/* Add additional styling for responsiveness */
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 40px 10px;
+    }
+
+    .testimonials-content {
+        padding: 15px;
+    }
+
+    .testimonials h2 {
+        font-size: 2em;
+    }
+
+    .testimonial-item {
+        padding: 20px;
+    }
+
+    .testimonial-item h4 {
+        font-size: 1.3em;
+    }
+
+    .testimonial-item p {
+        font-size: 1em;
+    }
+}
+
+/* Enhance testimonial item styles */
+.testimonial-item::before {
+    content: "“"; /* Add quotation marks */
+    font-size: 4em;
+    color: #020251;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.testimonial-item::after {
+    content: "”"; /* Add quotation marks */
+    font-size: 4em;
+    color: #020251;
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Additional hover effects */
+.testimonial-item:hover::before {
+    color: #e0e0e0; /* Change color on hover */
+}
+
+.testimonial-item:hover::after {
+    color: #e0e0e0; /* Change color on hover */
+}
+
+/* Additional styles for text alignment */
+.testimonials-content h2 {
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+}
+
+.testimonial-item p {
+    font-family: 'Georgia', serif;
+}
+
+/* Add a gradient background effect */
+.testimonials {
+    background: #020251;
+}
+
+/* Improve the text readability with shadow */
+.testimonial-item p, .testimonial-item h4 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Additional margin and padding adjustments */
+.testimonials-content {
+    padding: 40px;
+}
+
+.testimonial-item {
+    margin: 25px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .testimonials h2 {
+        font-size: 1.8em;
+    }
+
+    .testimonial-item h4 {
+        font-size: 1.2em;
+    }
+
+    .testimonial-item p {
+        font-size: 0.9em;
+    }
+}
+
+/* Custom scrollbar styles */
+.testimonials-content {
+    overflow-y: auto;
+}
+
+.testimonials-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.testimonials-content::-webkit-scrollbar-thumb {
+    background: #020251;
+    border-radius: 10px;
+}
+
+.testimonials-content::-webkit-scrollbar-thumb:hover {
+    background: #020251;
+}
+
+/* Testimonials Section Ending */
+
+/* Contact Information Section Starting */
+.contact-info {
+    background-color: #020251; /* Dark theme color */
+    color: white;
+    padding: 80px 20px; /* Increased padding for more spacious layout */
+    text-align: center;
+}
+
+.contact-info-content {
+    max-width: 1000px; /* Increased width for better layout */
+    margin: 0 auto;
+    padding: 30px; /* Added more padding inside the container */
+    background: rgba(0, 0, 0, 0.6); /* Darker overlay for contrast */
+    border-radius: 20px; /* More rounded corners for a modern look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Enhanced shadow for depth */
+}
+
+.contact-info h2 {
+    font-size: 3em; /* Larger font size for emphasis */
+    margin-bottom: 30px; /* Increased margin for spacing */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added shadow for text visibility */
+}
+
+.contact-info p {
+    font-size: 1.4em; /* Slightly larger font size for readability */
+    line-height: 1.8; /* Increased line height for better readability */
+    margin-bottom: 25px; /* Increased margin for spacing between paragraphs */
+    color: #f0f0f0; /* Lighter color for better contrast */
+}
+
+.contact-info a {
+    color: #ff4747; /* Use theme color for links */
+    text-decoration: none; /* Remove underline for a cleaner look */
+    font-weight: bold; /* Bold text for emphasis */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.contact-info a:hover {
+    color: #ffffff; /* Change color on hover for better visibility */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.contact-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)); /* Gradient overlay for added depth */
+    z-index: -1; /* Place behind the content */
+    border-radius: 20px; /* Match border radius */
+}
+
+.contact-info-content::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2)); /* Subtle inner gradient */
+    border-radius: 20px; /* Match border radius */
+    z-index: -2; /* Place behind the gradient overlay */
+    pointer-events: none; /* Ensure it doesn't interfere with interactions */
+}
+
+.contact-info-content h2::after {
+    content: "";
+    display: block;
+    width: 50px; /* Underline width */
+    height: 5px; /* Underline height */
+    background-color: #fcfcfc; /* Underline color */
+    margin: 20px auto; /* Center the underline */
+    border-radius: 3px; /* Rounded corners for the underline */
+}
+
+.contact-info p span {
+    display: block;
+    font-size: 1.2em; /* Slightly smaller font size for span */
+    color: #ffffff; /* White color for additional text */
+    margin-top: 10px; /* Space between span and previous text */
+}
+
+.contact-info-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px; /* Space above the form */
+}
+
+.contact-info-content form input,
+.contact-info-content form button {
+    padding: 15px;
+    font-size: 1.1em; /* Slightly larger font size */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove border */
+    margin: 10px 0; /* Space between form elements */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+}
+
+.contact-info-content form input {
+    width: 80%;
+    max-width: 400px; /* Limit width */
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Light shadow */
+}
+
+.contact-info-content form button {
+    width: 80%;
+    max-width: 400px; /* Limit width */
+    background-color: #ff4747; /* Theme color */
+    color: #ffffff; /* White text */
+    cursor: pointer; /* Pointer cursor */
+    font-weight: bold; /* Bold text */
+}
+
+.contact-info-content form button:hover {
+    background-color: #d13d3d; /* Darker shade on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+/* Additional Responsive Styles */
+@media (max-width: 768px) {
+    .contact-info-content {
+        padding: 20px;
+    }
+
+    .contact-info h2 {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+
+    .contact-info p {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+
+    .contact-info-content form {
+        margin-top: 20px; /* Reduce space above the form */
+    }
+}
+
+/* Contact Information Section Ending */
+
